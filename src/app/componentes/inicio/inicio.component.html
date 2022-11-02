@@ -1,0 +1,10 @@
+<p-galleria [value]="images" [numVisible]="5">
+  <ng-template pTemplate="item" let-item>
+      <img [src]="item.previewImageSrc" [alt]="item.alt" width="600px"/>
+  </ng-template>
+  <ng-template pTemplate="thumbnail" let-item>
+      <div class="grid grid-nogutter justify-content-center">
+          <img [src]="item.thumbnailImageSrc" width="50px"/>
+      </div>
+  </ng-template>
+</p-galleria>

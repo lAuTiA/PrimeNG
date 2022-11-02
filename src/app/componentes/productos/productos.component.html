@@ -1,0 +1,50 @@
+
+<p-carousel [value]="products" [numVisible]="3" [numScroll]="3" [circular]="false" [responsiveOptions]="responsiveOptions">
+  <ng-template pTemplate="header">
+      <h5>Por un Mate</h5>
+  </ng-template>
+  <ng-template let-product pTemplate="item">
+      <div class="product-item">
+          <div class="product-item-content">
+              <div class="mb-3">
+                  <img [src]="product.img" [alt]="product.name" class="product-image" width="300px"/>
+              </div>
+              <div>
+                  <h4 class="mb-1">{{product.name}}</h4>
+                  <h6 class="mt-0 mb-3">${{product.price}}</h6>
+
+                  <div class="car-buttons mt-5">
+                      <p-button type="button" styleClass="p-button p-button-rounded mr-2" icon="pi pi-thumbs-up"></p-button>
+                      <p-button type="button" styleClass="p-button-success p-button-rounded mr-2" icon="pi pi-star-fill"></p-button>
+
+                  </div>
+              </div>
+          </div>
+      </div>
+  </ng-template>
+</p-carousel>
+
+<p-carousel [value]="mates2" [numVisible]="3" [numScroll]="3" [circular]="false" [responsiveOptions]="responsiveOptions">
+  <ng-template pTemplate="header">
+  </ng-template>
+  <ng-template let-product pTemplate="item">
+      <div class="product-item">
+          <div class="product-item-content">
+              <div class="mb-3">
+                  <img [src]="product.img" [alt]="product.name" class="product-image" width="300px"/>
+              </div>
+              <div>
+                  <h4 class="mb-1">{{product.name}}</h4>
+                  <h6 class="mt-0 mb-3">${{product.price}}</h6>
+
+                  <div class="car-buttons mt-5">
+                      <p-button type="button" styleClass="p-button p-button-rounded mr-2" icon="pi pi-thumbs-up"></p-button>
+                      <p-button type="button" styleClass="p-button-success p-button-rounded mr-2" icon="pi pi-star-fill"></p-button>
+
+                  </div>
+              </div>
+          </div>
+      </div>
+  </ng-template>
+</p-carousel>
+
